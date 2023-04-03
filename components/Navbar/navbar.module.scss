@@ -1,0 +1,85 @@
+@import 'styles/variables.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+	width: 100%;
+	padding: 0 20px;
+	z-index: 99;
+	color: $color-white;
+	background-color: $color-black;
+	@include md {
+		padding: 0 40px;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		max-width: 1200px;
+		margin: 0 auto;
+		@include md {
+			height: 80px;
+		}
+
+		.menuLinks {
+			list-style-type: none;
+			display: none;
+			gap: 20px;
+			@include md {
+				display: flex;
+			}
+
+			.links {
+				font-size: 15px;
+				font-weight: 600;
+				text-transform: uppercase;
+				cursor: pointer;
+			}
+		}
+
+		.logo {
+			font-size: 19px;
+			font-weight: 700;
+			cursor: pointer;
+			@include md {
+				font-size: 32px;
+				position: absolute;
+				left: 50%;
+			}
+		}
+
+		.icons {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			svg {
+				font-size: 20px;
+				cursor: pointer;
+				@include md {
+					font-size: 24px;
+				}
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+
+			.cartIcon {
+				position: relative;
+				.cartCount {
+					position: absolute;
+					top: -5px;
+					right: -12px;
+					min-width: 20px;
+					text-align: center;
+					background: $color-red;
+					padding: 2.5px;
+					font-size: 12px;
+					line-height: 1;
+					border-radius: 20px;
+				}
+			}
+		}
+	}
+}
+
