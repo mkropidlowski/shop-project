@@ -17,7 +17,7 @@ const Hero = () => {
 						<button>Shop now!</button>
 					</div>
 				</div>
-				<Image className={styles.bannerLogo} src={iphoneBanner} alt="Iphone 14 PRO" />
+				<Image className={styles.bannerLogo} src={iphoneBanner} alt="Iphone 14 PRO" priority />
 			</div>
 		</div>
 	);

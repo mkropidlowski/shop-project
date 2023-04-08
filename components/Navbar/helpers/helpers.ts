@@ -6,7 +6,7 @@ export const menu: IMenuLinks = {
 		text: 'Home',
 	},
 	products: {
-		id: '/products',
+		id: 'products',
 		text: 'Products',
 		redirectToComponent: true,
 	},
