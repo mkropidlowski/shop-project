@@ -1,3 +1,4 @@
+import { productMockup } from 'db/products';
 import ProductCard from './ProductCard/ProductCard';
 import styles from './products.module.scss';
 
@@ -9,10 +10,9 @@ const Products = () => {
 			</div>
 
 			<div className={styles.products}>
-				<ProductCard />
-				<ProductCard />
-				<ProductCard />
-				<ProductCard />
+				{productMockup.map(({ id, productHeading, productImage, price }) => (
+					<ProductCard id={id} key={id} productHeading={productHeading} productImage={productImage} price={price} />
+				))}
 			</div>
 		</div>
 	);

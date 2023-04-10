@@ -6,15 +6,15 @@ export const footerMockup: IFooterLinks = {
 		heading: 'About',
 		links: [
 			{
-				href: '/',
+				href: '/1',
 				text: 'TEST LINK_1',
 			},
 			{
-				href: '/',
+				href: '/2',
 				text: 'TEST LINK_2',
 			},
 			{
-				href: '/',
+				href: '/3',
 				text: 'TEST LINK_3',
 			},
 		],
@@ -23,11 +23,11 @@ export const footerMockup: IFooterLinks = {
 		heading: 'Product',
 		links: [
 			{
-				href: '/',
+				href: '/5',
 				text: 'TEST LINK_1',
 			},
 			{
-				href: '/',
+				href: '/6',
 				text: 'TEST LINK_2',
 			},
 		],
