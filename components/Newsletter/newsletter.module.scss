@@ -1,0 +1,40 @@
+@import 'styles/variables.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: 10px;
+	top: 20px;
+	@include md {
+		flex-direction: row;
+	}
+	.emailInput {
+		width: 250px;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		&:focus-visible {
+			outline: none;
+		}
+	}
+	.subButton {
+		position: relative;
+		left: 0px;
+		width: 100px;
+		height: 35px;
+		background: #2d8de2;
+		font-size: 15px;
+		line-height: 15px;
+		font-weight: 600;
+		color: $color-white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		@include md {
+			left: 15px;
+		}
+	}
+}
+

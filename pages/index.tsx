@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer';
 import Hero from 'components/Hero/Hero';
 import Navbar from 'components/Navbar/Navbar';
 import PageLayout from 'components/PageLayout/PageLayout';
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
 				<Navbar />
 				<Hero />
 				<Products />
+				<Footer />
 			</PageLayout>
 		</>
 	);

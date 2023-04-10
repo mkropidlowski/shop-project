@@ -1,0 +1,71 @@
+@import 'styles/variables.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 150px;
+	width: 100%;
+	height: 700px;
+	background-image: linear-gradient(to right, #19354d, #4c4cbd);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	color: $color-white;
+	.logo {
+		max-width: 320px;
+		position: relative;
+		top: -40px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+		background: $color-blue-dark;
+		padding: 30px;
+		border-radius: 30px;
+		color: $color-white;
+		@include md {
+			max-width: 950px;
+			flex-direction: row;
+			justify-content: unset;
+			gap: 50px;
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1000px;
+		gap: 10px;
+		.links {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			.box {
+				.list {
+					list-style-type: none;
+					padding: 10px;
+					.listText {
+						padding: 10px;
+					}
+				}
+			}
+			@include md {
+				flex-direction: row;
+				gap: 80px;
+			}
+		}
+		@include md {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 50px;
+		}
+	}
+	@include md {
+		height: 350px;
+	}
+}
+
