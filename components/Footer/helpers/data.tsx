@@ -6,16 +6,24 @@ export const footerMockup: IFooterLinks = {
 		heading: 'About',
 		links: [
 			{
-				href: '/1',
-				text: 'TEST LINK_1',
+				href: '/company',
+				text: 'Company',
 			},
 			{
-				href: '/2',
-				text: 'TEST LINK_2',
+				href: '/jobs',
+				text: 'Jobs',
 			},
 			{
-				href: '/3',
-				text: 'TEST LINK_3',
+				href: '/delivery',
+				text: 'Delivery',
+			},
+			{
+				href: '/faq',
+				text: 'FAQ',
+			},
+			{
+				href: '/payments',
+				text: 'Payments',
 			},
 		],
 	},
@@ -23,12 +31,12 @@ export const footerMockup: IFooterLinks = {
 		heading: 'Product',
 		links: [
 			{
-				href: '/5',
-				text: 'TEST LINK_1',
+				href: '/shop_list',
+				text: 'Visit our shop',
 			},
 			{
-				href: '/6',
-				text: 'TEST LINK_2',
+				href: '/new_product',
+				text: 'New product',
 			},
 		],
 	},

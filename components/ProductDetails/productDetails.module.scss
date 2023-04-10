@@ -3,12 +3,11 @@
 
 .wrapper {
 	max-width: 1200px;
-	height: 100vh;
 	margin: 0 auto;
 	.container {
-		position: absolute;
+		position: relative;
+		margin-top: 70px;
 		width: 100%;
-		height: 100%;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -16,7 +15,6 @@
 		gap: 20px;
 		@include md {
 			flex-direction: row;
-			top: 50px;
 			gap: 50px;
 		}
 		.imageBox {
@@ -32,7 +30,11 @@
 			align-items: center;
 			max-width: 500px;
 			.heading {
+				max-width: 320px;
 				padding: 20px;
+				@include md {
+					max-width: 600px;
+				}
 			}
 			.description {
 				text-align: left;
@@ -83,9 +85,6 @@
 				align-items: flex-start;
 			}
 		}
-	}
-	@include md {
-		height: 70vh;
 	}
 }
 
