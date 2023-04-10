@@ -1,0 +1,11 @@
+export { default as EarbudsProd2 } from './EarbudsProd2';
+export { default as EarbudsProd3 } from './EarbudsProd3';
+export { default as EarbudsProd4 } from './EarbudsProd4';
+export { default as EarbudsProd5 } from './EarbudsProd5';
+export { default as HeadphoneProd1 } from './HeadphoneProd1';
+export { default as HeadphoneProd2 } from './HeadphoneProd2';
+export { default as SpeakerProd1 } from './SpeakerProd1';
+export { default as SpeakerProd3 } from './SpeakerProd3';
+export { default as WatchProd1 } from './WatchProd1';
+export { default as WatchProd2 } from './WatchProd2';
+export { default as WatchProd3 } from './WatchProd3';

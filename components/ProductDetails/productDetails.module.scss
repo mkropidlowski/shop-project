@@ -1,0 +1,91 @@
+@import 'styles/variables.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+	max-width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	.container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		@include md {
+			flex-direction: row;
+			top: 50px;
+			gap: 50px;
+		}
+		.imageBox {
+			background: $color-wedding;
+			max-width: 500px;
+			max-height: 500px;
+			padding: 30px;
+			border-radius: 20px;
+		}
+		.productDetails {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 500px;
+			.heading {
+				padding: 20px;
+			}
+			.description {
+				text-align: left;
+				font-size: 15px;
+				max-width: 250px;
+				@include md {
+					max-width: 450px;
+				}
+			}
+			.price {
+				padding: 20px;
+				font-weight: bold;
+			}
+			.buttonBox {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+				.addToCartBtn {
+					width: 200px;
+					border: 0;
+					border-radius: 10px;
+					text-transform: uppercase;
+					background: $color-green-dark;
+					color: $color-white;
+					padding: 8px;
+					font-size: 14px;
+					line-height: 20px;
+					cursor: pointer;
+				}
+				.backToHome {
+					width: 100px;
+					border: 0;
+					border-radius: 10px;
+					text-transform: uppercase;
+					padding: 8px;
+					font-size: 13px;
+					line-height: 20px;
+					cursor: pointer;
+				}
+				@include md {
+					flex-direction: row;
+					justify-content: center;
+				}
+			}
+
+			@include md {
+				align-items: flex-start;
+			}
+		}
+	}
+	@include md {
+		height: 70vh;
+	}
+}
+

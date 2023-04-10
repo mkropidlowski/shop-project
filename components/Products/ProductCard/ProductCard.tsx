@@ -1,16 +1,25 @@
-import Image from 'next/image';
 import styles from './productCard.module.scss';
-import appleWatch from '../../icons/apple-watch.png';
+import { useRouter } from 'next/router';
+import { IProductMockup } from 'db/types';
+import { FC } from 'react';
 
-const ProductCard = () => {
+const ProductCard: FC<IProductMockup> = ({ id, productHeading, productImage, price }) => {
+	const router = useRouter();
+
+	const showDetailsHandler = (event: React.MouseEvent<HTMLDivElement>) => {
+		const target = event.currentTarget;
+		const id = target.getAttribute('data-id');
+		if (id !== undefined && id !== null) {
+			router.push(`/product_details/${id}`);
+		}
+	};
+
 	return (
-		<div className={styles.wrapper}>
-			<div className={styles.image}>
-				<Image src={appleWatch} alt="Apple Watch" width="250" height="250" priority />
-			</div>
+		<div className={styles.wrapper} data-id={id} onClick={showDetailsHandler}>
+			<div className={styles.image}>{productImage}</div>
 			<div className={styles.details}>
-				<span className={styles.productDescription}>Opis produktu blah blah blah</span>
-				<h3>$499</h3>
+				<span className={styles.productDescription}>{productHeading}</span>
+				<h3>$ {price}</h3>
 			</div>
 		</div>
 	);
