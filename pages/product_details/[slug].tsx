@@ -6,7 +6,7 @@ const ProductDetailsPage = () => {
 	const router = useRouter();
 	const { slug } = router.query;
 
-	return <ProductDetails productId={slug} products={productMockup} />;
+	// return <ProductDetails productId={slug} products={productMockup} />;
 };
 
 export default ProductDetailsPage;
