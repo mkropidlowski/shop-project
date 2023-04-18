@@ -11,6 +11,7 @@ const Products = () => {
 
 			<div className={styles.products}>
 				{productMockup.map(({ id, productHeading, productImage, price }) => (
+					// TODO: fix productImage
 					<ProductCard id={id} key={id} productHeading={productHeading} productImage={productImage} price={price} />
 				))}
 			</div>

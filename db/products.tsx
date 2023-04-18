@@ -1,7 +1,8 @@
 import { EarbudsProd2, EarbudsProd3, HeadphoneProd1, SpeakerProd1, WatchProd1, WatchProd3 } from 'components/icons';
-import { IProductMockup } from './types';
+import { IProduct } from 'utils/Context';
+// import { IProductMockup } from './types';
 
-export const productMockup: IProductMockup[] = [
+export const productMockup: IProduct[] = [
 	{
 		id: '1',
 		productHeading: 'Rockerz 550 Over Ear Bluetooth Headphone',

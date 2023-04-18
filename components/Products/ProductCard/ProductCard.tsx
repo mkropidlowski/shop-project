@@ -1,9 +1,9 @@
 import styles from './productCard.module.scss';
 import { useRouter } from 'next/router';
-import { IProductMockup } from 'db/types';
+import { IProductProps } from 'db/types';
 import { FC } from 'react';
 
-const ProductCard: FC<IProductMockup> = ({ id, productHeading, productImage, price }) => {
+const ProductCard: FC<IProductProps> = ({ id, productHeading, productImage, price }) => {
 	const router = useRouter();
 
 	const showDetailsHandler = (event: React.MouseEvent<HTMLDivElement>) => {
