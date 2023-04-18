@@ -1,5 +1,5 @@
-export interface IProductMockup {
-	id?: string;
+export interface IProductProps {
+	id: string;
 	productHeading?: string;
 	// eslint-disable-next-line no-undef
 	productImage?: JSX.Element;
